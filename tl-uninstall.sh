@@ -31,8 +31,8 @@ clear_aliases()
 main()
 {	
 	clear_dependencies
-  clear_minecraft_files
-  clear_aliases
+ 	clear_minecraft_files
+  	clear_aliases
 }
 
 main
