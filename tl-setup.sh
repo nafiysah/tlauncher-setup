@@ -40,6 +40,7 @@ prepare_jdk()
 	wget https://dl.dropboxusercontent.com/s/6jrpd1uxrlhhsni/jdk-8u211-linux-x64.tar.gz
 }
 
+
 install_java()
 {
 	prepare_java_installer
@@ -104,6 +105,15 @@ Categories=Game
 
 }
 
+add_command_alias()
+{
+alias minecraft='pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /usr/bin/java -jar -Dswing.systemlaf=javax.swing.plaf.nimbus.NimbusLookAndFeel ~/.minecraft/tlauncher.jar'
+}
+
+init_tlauncher()
+{
+pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /usr/bin/java -jar -Dswing.systemlaf=javax.swing.plaf.nimbus.NimbusLookAndFeel ~/.minecraft/tlauncher.jar
+}
 main()
 {	
 	prepare_workdir ~/solidwaffle
@@ -113,6 +123,8 @@ main()
 	prepare_minecraft_icon
 	move_files
 	add_desktop_entry
+ 	add_command_alias
+  	init_tlauncher
 	delete_workdir ~/solidwaffle
 
 	chmod -R +x ~/.minecraft
