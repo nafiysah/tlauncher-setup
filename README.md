@@ -31,7 +31,7 @@ If there are problems running the script, then here is the manual process of ins
 - `wget https://dl.dropboxusercontent.com/s/6jrpd1uxrlhhsni/jdk-8u211-linux-x64.tar.gz`
 
 #### Install Java
-- `mkdir -p /usr/lib/jvm`
+- `sudo mkdir -p /usr/lib/jvm`
 - `yes | sudo -E ./install-java.sh -f jdk-8u211-linux-x64.tar.gz -p /usr/lib/jvm`
 
 #### Prepare TLauncher .jar
