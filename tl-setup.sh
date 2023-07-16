@@ -82,24 +82,8 @@ move_files()
 
 add_desktop_entry()
 {
-	declare entry_filename=/usr/share/applications/minecraft.desktop
-
-	touch ${entry_filename}
-
-	cat > ${entry_filename} <<- EOM
-[Desktop Entry]
-Encoding=UTF-8
-Exec=lxterminal -e "pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /usr/bin/java -jar -Dswing.systemlaf=javax.swing.plaf.nimbus.NimbusLookAndFeel ~/.minecraft/tlauncher.jar"
-Icon=~/.minecraft/icons/default.png
-Type=Application
-Terminal=false
-Name=Minecraft
-GenericName=minecraft
-StartupNotify=false
-Categories=Game
-	EOM
-
-
+	wget https://raw.githubusercontent.com/nafiysah/tlauncher-setup/master/minecraft.desktop
+	mv minecraft.desktop /usr/share/applications
 }
 
 add_command_alias()
