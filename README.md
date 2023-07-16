@@ -13,8 +13,8 @@ As of 2023-07-14,  the current Lubuntu LTS version is 22.04.
 - `sudo chmod +x tl-setup.sh`
 - run `sudo ./tl-setup.sh`
 
-## Manual
-IF there are poblems running the script, then here is the manual process of installation.
+### Manual
+If there are poblems running the script, then here is the manual process of installation.
 
 ### Create a Temporary Work Directory
 - `mkdir solidwaffle`
