@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=lxterminal -e "pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /usr/bin/java -jar -Dswing.systemlaf=javax.swing.plaf.nimbus.NimbusLookAndFeel ~/.minecraft/tlauncher.jar"
+Icon=~/.minecraft/icons/default.png
+Type=Application
+Terminal=false
+Name=Minecraft
+GenericName=minecraft
+StartupNotify=false
+Categories=Game
