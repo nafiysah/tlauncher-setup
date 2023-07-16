@@ -25,7 +25,7 @@ If there are problems running the script, then here is the manual process of ins
 
 #### Prepare Java Installer
 - `wget https://raw.githubusercontent.com/chrishantha/install-java/master/install-java.sh`
-- `chmod +x install-java.sh`
+- `sudo chmod +x install-java.sh`
 
 #### Prepare JDK
 - `wget https://dl.dropboxusercontent.com/s/6jrpd1uxrlhhsni/jdk-8u211-linux-x64.tar.gz`
