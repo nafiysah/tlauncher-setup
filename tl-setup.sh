@@ -54,9 +54,6 @@ install_java()
 
 prepare_dependencies()
 {
-	# unzip required by the install-java.sh script
-	apt-get install unzip i3-wm lxterminal -y || echo "You've been Gnomed! Installation failed!" && exit
-
 	install_java
 }
 
