@@ -48,7 +48,7 @@ If there are problems running the script, then here is the manual process of ins
 
 #### Prepare Desktop Icon 
 - `wget https://raw.githubusercontent.com/nafiysah/tlauncher-setup/master/minecraft.desktop`
-- `mv minecraft.desktop /usr/share/applications`
+- `sudo mv minecraft.desktop /usr/share/applications`
   
 ## Uninstall
 
